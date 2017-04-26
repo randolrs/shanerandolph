@@ -17,15 +17,119 @@ nav.header{
 	top: 0px;
 	left:0px;
 	right:0px;
-	height: 70px;
 	z-index: 99999;
 }
 
-
-nav.header:after{
-	
+nav.header, .header-offset{
+	height: 70px;
 }
 
-.header-offset{
-	height: 70px;
+.header-content{
+	
+	padding: 0px 0px;
+	
+	margin: 0 auto;
+	
+
+	.header-options{
+
+		a{
+			line-height: 30px;
+			padding: 20px 12px;
+    		font-size: 20px;
+    		color: #fff;
+    		font-weight: 400;
+    		display: inline-block;
+    		
+		}
+
+		a.header-image{
+			padding: 15px;
+		}
+
+		a.logo{
+			font-weight: 400;
+    		font-size: 22px;
+    		background: none;
+    		box-shadow: none;
+    		letter-spacing: -1px;
+    		color: #fff;
+    		border: none;
+    		display: inline-block;
+
+    		span{
+    			display: inline-block;
+			    
+			    line-height: 30px;
+			    
+			    text-align: center;
+    		}
+    		
+		}
+
+		a.full-logo{
+			
+			padding: 5px 12px;
+			color: #fff;
+			text-align: left;
+
+			span{
+				line-height: 22px;
+			}
+
+			span.tagline{
+				color: rgba(255,255,255,0.7);
+    			font-size: 16px;
+			}
+		}
+
+		a.cheeseburger-container{
+			line-height: 12px;
+			padding: 22px 12px;
+		}
+
+		a.menu-button{
+			padding:15px 5px;
+		}	
+
+		a.logo:hover{
+			-webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  			-moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  			animation: neon6 1.5s ease-in-out infinite alternate;
+		}
+
+		@-webkit-keyframes neon6 {
+		  from {
+		    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+		  }
+		  to {
+		    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+		  }
+		}
+
+		a.cta{
+			padding: 5px 15px;
+		    margin: 10px;
+		    background: #3349EB;
+		    border-radius: 5px;
+		    color: #fff;
+		    text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+		}
+
+		span.glyphicon{
+			line-height: 24px;
+		}
+
+	}
+
+	.header-options.left{
+		float: left;
+		
+	}
+
+	.header-options.right{
+		float: right;
+		
+	}
+
 }
