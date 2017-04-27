@@ -1,3 +1,109 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	.main-container{
+
+		top: 0 !important;
+    	left: 0 !important;
+    	width: auto !important;
+
+	}
+
+	.left-block{
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    width: 15vw;
+	    background: #000;
+	    border-right: 1px solid #e5e5e5;
+	    box-shadow: 0 0 4px #e5e5e5;
+	    overflow: hidden;
+	    padding-top: 5vh;
+	    border-right: 4px solid yellow;
+
+	    border-width: 0px 3px 0px 0px;
+	    border-style: solid;
+	    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(red), to(rgba(50, 0, 200, 0.8))) 1 100%;
+	    -webkit-border-image: -webkit-linear-gradient(red, rgba(50, 0, 200, 0.8)) 1 100%;
+	    -moz-border-image: -moz-linear-gradient(red, rgba(50, 0, 200, 0.8)) 1 100%;
+	    -o-border-image: -o-linear-gradient(red, rgba(50, 0, 200, 0.8)) 1 100%;
+	    border-image: linear-gradient(to bottom, red, rgba(50, 0, 200, 0.8)) 1 100%;
+
+	    .main-image-container{
+
+	    	padding:10px;
+	    	width: 150px;
+			max-width: 100%;
+			height: 150px;
+			margin: 0 auto;
+
+		    .home-main-image{
+		    	width: 200px;
+			    max-width: 100%;
+			    max-height: 100%;
+			    border-radius: 50%;
+			    border: 3px solid #fff;
+		    }
+
+	    }
+
+	    h1{
+	    	color: #fff;
+	    	font-size: 20px;
+	    	text-align: center;
+	    }
+
+	    .main-menu{
+	    	a{
+	    		display: block;
+			    width: 100%;
+			    height: 3em;
+			    line-height: 3em;
+			    text-transform: uppercase;
+			    color: #ccc;
+			    cursor: pointer;
+			    font-size: 1.1rem;
+			    white-space: nowrap;
+			    padding: 0 0 0 1.5vw;
+			    -webkit-transition: box-shadow 300ms;
+			    transition: box-shadow 300ms;
+			    box-shadow: inset 0 0 #e6e6e6;
+			    text-decoration: none;
+	    	}
+
+	    	a:hover {
+			    box-shadow: inset 1vw 0 #fff;
+			    text-decoration: none;
+			}
+
+			a.active{
+				background: #fff;
+				color: #000;
+			}
+	    }
+	}
+
+	.right-block{
+		position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: 0;
+	    width: 85vw;
+
+	    section{
+	    	padding: 10vh 5vw;
+	    	color: #666;
+
+	    	h2{
+	    		font-size: 3rem;
+	    		font-weight: 600;
+    			line-height: 1.2em;
+    			margin: .5rem 0 2.5rem;
+    			color: #000;
+	    	}
+	    }
+	}
+}

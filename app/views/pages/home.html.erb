@@ -1,2 +1,75 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="left-block">
+	<div class="main-image-container">
+		<%= image_tag 'shane_randolph_photo.jpg', class:'home-main-image'%>
+	</div>
+	<h1>Shane Randolph</h1>
+	<br>
+	<nav class="main-menu">
+		<a class="menu-option active click-to-reveal" data-reveal-panel-id="welcome">Welcome</a>
+		<a class="menu-option click-to-reveal" data-reveal-panel-id="development">Development</a>
+		<a class="menu-option click-to-reveal" data-reveal-panel-id="design">Design</a>
+		<a class="menu-option click-to-reveal" data-reveal-panel-id="uiux">UI/UX</a>
+		<a class="menu-option click-to-reveal" data-reveal-panel-id="seo">SEO</a>
+		<a class="menu-option click-to-reveal" data-reveal-panel-id="contact">Contact</a>
+	</nav>
+</div>
+
+<div class="right-block">
+	
+	<section class="reveal-panel" id="welcome">
+
+		<h2>Hello!</h2>
+
+		<p>You found my portfolio webiste for ...</p>
+		<ul>
+			<li><a>Web Development</a></li>
+			<li><a>Design</a></li>
+			<li><a>UI/UX</a></li>
+			<li><a>SEO</a></li>
+			<li><a>SEO</a></li>
+
+		</ul>
+
+	</section>
+
+	<section class="reveal-panel" id="development" style="display: none;">
+
+		<h2>Development</h2>
+
+	</section>
+
+	<section class="reveal-panel" id="design" style="display: none;">
+
+		<h2>Design</h2>
+
+		<p>You found my portfolio webiste for ...</p>
+		<ul>
+			<li><a>Web Development</a></li>
+			<li><a>Design</a></li>
+			<li><a>UI/UX</a></li>
+			<li><a>SEO</a></li>
+			<li><a>SEO</a></li>
+
+		</ul>
+
+	</section>
+
+	<section class="reveal-panel" id="uiux" style="display: none;">
+
+		<h2>UI/UX</h2>
+
+	</section>
+
+	<section class="reveal-panel" id="seo" style="display: none;">
+
+		<h2>SEO</h2>
+
+	</section>
+
+	<section id="contact" class="reveal-panel" id="contact" style="display: none;">
+
+		<h2>Contact</h2>
+
+	</section>
+
+</div>
