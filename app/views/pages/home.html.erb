@@ -3,13 +3,12 @@
 		<%= image_tag 'shane_randolph_photo.jpg', class:'home-main-image'%>
 	</div>
 	<h1>Shane Randolph</h1>
-	<br>
+	<br><br>
 	<nav class="main-menu">
 		<a class="menu-option active click-to-reveal" data-reveal-panel-id="welcome">Welcome</a>
 		<a class="menu-option click-to-reveal" data-reveal-panel-id="development">Development</a>
-		<a class="menu-option click-to-reveal" data-reveal-panel-id="design">Design</a>
-		<a class="menu-option click-to-reveal" data-reveal-panel-id="uiux">UI/UX</a>
-		<a class="menu-option click-to-reveal" data-reveal-panel-id="seo">SEO</a>
+		<a class="menu-option click-to-reveal" data-reveal-panel-id="design">Design/UI</a>
+		<a class="menu-option click-to-reveal" data-reveal-panel-id="marketing">Marketing</a>
 		<a class="menu-option click-to-reveal" data-reveal-panel-id="contact">Contact</a>
 	</nav>
 </div>
@@ -18,57 +17,171 @@
 	
 	<section class="reveal-panel" id="welcome">
 
-		<h2>Hello!</h2>
+		<div class="text-content">
+			
+			<h2>Hello!</h2>
 
-		<p>You found my portfolio webiste for ...</p>
-		<ul>
-			<li><a>Web Development</a></li>
-			<li><a>Design</a></li>
-			<li><a>UI/UX</a></li>
-			<li><a>SEO</a></li>
-			<li><a>SEO</a></li>
+			<p>Welcome to my portfolio</p>
+			<ul>
+				<li><a>Web Development</a></li>
+				<li><a>Design/UI</a></li>
+				<li><a>SEO</a></li>
+				<li><a>SEO</a></li>
 
-		</ul>
+			</ul>
+
+			<p>Click the button below to step-by-step guide or skip to a section using (the menu on the left/bottom)</p>
+
+			<br>
+
+			<a class="button blue-background click-to-reveal" data-reveal-panel-id="development">Next</a>
+
+		</div>
+
+		<div class="image-content">
+
+			<%= image_tag 'shane_randolph_photo.jpg', class:'home-main-image'%>
+
+		</div>
 
 	</section>
 
 	<section class="reveal-panel" id="development" style="display: none;">
 
-		<h2>Development</h2>
+		<div class="text-content">
+
+			<h2>Development</h2>
+
+			<p>I have 4 years of development experience, primarily web applications on behalf of startups.  ... Minimum viable products to full featured applications that ...</p>
+
+			<p>Reference Projects</p>
+
+			<ul>
+				<li><a>Web Development</a></li>
+				<li><a>Design</a></li>
+
+			</ul>
+
+			<p>Suggested on the Subject</p>
+
+			<ul>
+				<li><a>Book 1</a></li>
+				<li><a>Blog 1</a></li>
+
+			</ul>
+
+			<p>Segway language between this section and the next</p>
+
+			<br>
+
+			<a class="button blue-background click-to-reveal" data-reveal-panel-id="design">Next</a>
+
+		</div>
+
+		<div class="image-content">
+
+			<%= image_tag 'shane_randolph_photo.jpg', class:'home-main-image'%>
+
+		</div>
 
 	</section>
 
 	<section class="reveal-panel" id="design" style="display: none;">
 
-		<h2>Design</h2>
+		<div class="text-content">
 
-		<p>You found my portfolio webiste for ...</p>
-		<ul>
-			<li><a>Web Development</a></li>
-			<li><a>Design</a></li>
-			<li><a>UI/UX</a></li>
-			<li><a>SEO</a></li>
-			<li><a>SEO</a></li>
+			<h2>Design</h2>
 
-		</ul>
+			<p>... based on the ... the web design is fundamnetally communication technology.  ... did they get the message?</p>
+
+			<p>Recent projects</p>
+
+			<ul>
+				<li><a>Hiro Asian Kitchen</a></li>
+				<li><a>ComedyHere</a></li>
+
+			</ul>
+
+			<p>Suggested reading on the Subject</p>
+
+			<ul>
+				<li><a>Book 1</a></li>
+				<li><a>Blog 1</a></li>
+
+			</ul>
+
+			<p>Segway language between this section and the next</p>
+
+			<br>
+
+			<a class="button blue-background click-to-reveal" data-reveal-panel-id="marketing">Next</a>
+
+		</div>
+
+		<div class="image-content">
+
+			<%= image_tag 'shane_randolph_photo.jpg', class:'home-main-image'%>
+
+		</div>
 
 	</section>
 
-	<section class="reveal-panel" id="uiux" style="display: none;">
 
-		<h2>UI/UX</h2>
+	<section class="reveal-panel" id="marketing" style="display: none;">
 
-	</section>
+		<div class="text-content">
 
-	<section class="reveal-panel" id="seo" style="display: none;">
+			<h2>Marketing</h2>
 
-		<h2>SEO</h2>
+			<p>Thesis</p>
+
+			<p>Reference Projects</p>
+
+			<ul>
+				<li><a>Web Development</a></li>
+				<li><a>Design</a></li>
+
+			</ul>
+
+			<p>Suggested on the Subject</p>
+
+			<ul>
+				<li><a>Book 1</a></li>
+				<li><a>Blog 1</a></li>
+
+			</ul>
+
+			<p>Segway language between this section and the next</p>
+
+			<br>
+
+			<a class="button blue-background click-to-reveal" data-reveal-panel-id="contact">Next</a>
+
+		</div>
+
+		<div class="image-content">
+
+			<%= image_tag 'shane_randolph_photo.jpg', class:'home-main-image'%>
+
+		</div>
 
 	</section>
 
 	<section id="contact" class="reveal-panel" id="contact" style="display: none;">
 
-		<h2>Contact</h2>
+		<div class="text-content">
+
+			<h2>Contact</h2>
+
+		</div>
+
+		<div class="image-content">
+
+			<%= image_tag 'shane_randolph_photo.jpg', class:'home-main-image'%>
+
+		</div>
+
+
 
 	</section>
 
