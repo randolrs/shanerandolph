@@ -6,11 +6,11 @@ ready = ->
 		
 	jQuery ->
 
-		$(".menu-option").click (window.event), ->
+		$(".menu-option").click (e) ->
 			$(".menu-option").removeClass("active")
 			$(@).addClass("active")
 
-		$(".click-to-reveal").click (window.event), ->
+		$(".click-to-reveal").click (e) ->
 			$('.click-to-reveal').removeClass('active')
 			$('.reveal-panel').hide()
 			$(@).addClass('active')
