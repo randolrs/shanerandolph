@@ -75,13 +75,14 @@ body{
 	    	}
 
 	    	a:hover {
-			    box-shadow: inset 1vw 0 #fff;
+			    box-shadow: inset 1vw 0 #eee;
 			    text-decoration: none;
 			}
 
 			a.active{
-				background: #fff;
+				background: #eee;
 				color: #000;
+				font-weight: 700;
 			}
 	    }
 	}
