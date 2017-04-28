@@ -24,8 +24,6 @@
 				margin-bottom: -20px;
 			}
 
-		
-
 			.main-container{
 
 				top: 0 !important;
@@ -70,8 +68,6 @@
 					    	height: 150px;
 						    max-width: 100%;
 						    max-height: 100%;
-						    border-radius: 50%;
-						    border: 3px solid #fff;
 					    }
 
 				    }
@@ -125,6 +121,7 @@
 				    bottom: 0;
 				    right: 0;
 				    width: 85vw;
+				    max-width: 1000px;
 
 
 				    section{
@@ -136,12 +133,14 @@
 						    display: inline-block;
 						    vertical-align: top;
 						    padding: 0 3vw;
+						    max-width: 650px;
 				    	}
 
 				    	.image-content{
 						    width: 30vw;
 						    display: inline-block;
 						    vertical-align: top;
+						    max-width: 350px;
 
 						    img{
 						    	max-width:100%;

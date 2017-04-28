@@ -1,8 +1,12 @@
 <div class="left-block">
-	<div class="main-image-container">
-		<%= image_tag 'shane_randolph_photo.jpg', class:'home-main-image'%>
-	</div>
-	<h1>Shane Randolph</h1>
+	
+	<%= link_to root_path do %>
+		<div class="main-image-container">
+			<%= image_tag 'shane_randolph_photo.jpg', class:'home-main-image'%>
+		</div>
+		<h1>Shane Randolph</h1>
+	<%end%>
+
 	<br><br>
 	<nav class="main-menu">
 		<a class="menu-option active click-to-reveal" data-reveal-panel-id="welcome">Welcome</a>
