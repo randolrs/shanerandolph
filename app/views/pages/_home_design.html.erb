@@ -3,55 +3,56 @@
 
 	<header>Design</header>
 
-	<div class="text-content">
+	<div>
+		<div class="text-content">
 
-		<p>I create responsive, mobile-first web applications using front-end frameworks, including <%= link_to "MeteorJS", "https://meteor.com", target: :_blank %>, <%= link_to "AngularJS", "https://angular.io", target: :_blank %>, <%= link_to "Bootstrap", "http://getbootstrap.com", target: :_blank %>, <%= link_to "JQuery", "https://jquery.com", target: :_blank %>, and old-fashioned, handwritten (<i>gasp!</i>) CSS media queries.</p>
+			<p>I create responsive, mobile-first web applications using front-end frameworks, including <%= link_to "MeteorJS", "https://meteor.com", target: :_blank %>, <%= link_to "AngularJS", "https://angular.io", target: :_blank %>, <%= link_to "Bootstrap", "http://getbootstrap.com", target: :_blank %>, <%= link_to "JQuery", "https://jquery.com", target: :_blank %>, and old-fashioned, handwritten (<i>gasp!</i>) CSS media queries.</p>
 
-		<p>Design challenges are communication challenges so everything I design is intended first and foremost to be easily understood by the end-user.  Consequently, I err towards simplicity and explicitness in design and use A/B testing to validate optimal design for user experience.</p>
+			<p>Design challenges are communication challenges so everything I design is intended first and foremost to be easily understood by the end-user.  Consequently, I err towards simplicity and explicitness in design and use A/B testing to validate optimal design for user experience.</p>
 
-		<p>Check out some of my design projects to the right or press the button below to learn more about my marketing experience.</p>
+			<p>Check out some of my recent design projects <span class="mobile-only">below or press the button below</span><span class="full-screen">to the right or press the button below to learn more about my marketing experience</span>.</p>
 
-		<br>
+		</div>
 
-		<a class="button blue-background click-to-reveal" data-reveal-panel-id="marketing">See my Marketing Experience <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+		<div class="image-content">
 
-	</div>
+			<div class="centered">
 
-	<div class="image-content">
+				<ul class="" id="rig">
 
-		<div class="centered">
+					<li>
+						<a class="rig-cell show-modal" data-reveal-panel-id="comedyhere-page">
 
-			<ul class="" id="rig">
+						<%= image_tag 'comedy_here_photo.PNG', class:'rig-img'%>
+				        
+				        <span class="rig-overlay"></span>
+				        
+				        <span class="rig-text">ComedyHere</span>
 
-				<li>
-					<a class="rig-cell show-modal" data-reveal-panel-id="comedyhere-page">
+					    </a>
+					</li>
 
-					<%= image_tag 'comedy_here_photo.PNG', class:'rig-img'%>
-			        
-			        <span class="rig-overlay"></span>
-			        
-			        <span class="rig-text">ComedyHere</span>
+					<li>
+						<a class="rig-cell show-modal" data-reveal-panel-id="hiro-asian-kitchen-page">
 
-				    </a>
-				</li>
+						<%= image_tag 'hiro_asian_kitchen_photo.PNG', class:'rig-img'%>
+				        
+				        <span class="rig-overlay"></span>
+				        
+				        <span class="rig-text">HiroAsianKitchen</span>
 
-				<li>
-					<a class="rig-cell show-modal" data-reveal-panel-id="hiro-asian-kitchen-page">
+					    </a>
+					</li>
 
-					<%= image_tag 'hiro_asian_kitchen_photo.PNG', class:'rig-img'%>
-			        
-			        <span class="rig-overlay"></span>
-			        
-			        <span class="rig-text">HiroAsianKitchen</span>
+				</ul>
 
-				    </a>
-				</li>
-
-			</ul>
+			</div>
 
 		</div>
 
 	</div>
+
+	<%= render :partial => 'pages/next_page_cta', :locals => {:page_id => "marketing", :cta_text => "See my Marketing Experience"} %>
 
 </section>
 

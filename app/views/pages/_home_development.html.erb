@@ -3,55 +3,57 @@
 
 	<header>Development</header>
 
-	<div class="text-content">
+	<div>
+		
+		<div class="text-content">
 
-		<p>I have developed full-featured web applications, including eCommerce, marketplace, social media, and geolocation-enabled directory applications.</p>
+			<p>I have developed full-featured web applications, including eCommerce, marketplace, social media, and geolocation-enabled directory applications.</p>
 
-		<p>I work primarily with <%= link_to "Ruby", "http://rubyonrails.org", target: :_blank  %> but am also very familiar with <%= link_to "Python", "https://python.org", target: :_blank %> and <%= link_to "PHP", "http://PHP.net", target: :_blank %>.</p>
+			<p>I work primarily with <%= link_to "Ruby", "http://rubyonrails.org", target: :_blank  %> but am also very familiar with <%= link_to "Python", "https://python.org", target: :_blank %> and <%= link_to "PHP", "http://PHP.net", target: :_blank %>.</p>
 
-		<p>Check out some of my development projects to the right or press the button below to learn more about my design experience.</p>
+			<p>Check out some of my development projects to the right or press the button below to learn more about my design experience.</p>
 
-		<br>
+		</div>
 
-		<a class="button blue-background click-to-reveal" data-reveal-panel-id="design">See my Design Experience <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+		<div class="image-content">
 
-	</div>
+			<div class="centered">
 
-	<div class="image-content">
+				<ul class="" id="rig">
 
-		<div class="centered">
+					<li>
+						<a class="rig-cell show-modal" data-reveal-panel-id="artyam-page">
 
-			<ul class="" id="rig">
+						<%= image_tag 'artyam_photo.PNG', class:'rig-img'%>
+				        
+				        <span class="rig-overlay"></span>
+				        
+				        <span class="rig-text">ArtYam</span>
 
-				<li>
-					<a class="rig-cell show-modal" data-reveal-panel-id="artyam-page">
+					    </a>
+					</li>
 
-					<%= image_tag 'artyam_photo.PNG', class:'rig-img'%>
-			        
-			        <span class="rig-overlay"></span>
-			        
-			        <span class="rig-text">ArtYam</span>
+					<li>
+						<a class="rig-cell show-modal" data-reveal-panel-id="servmanity-page">
 
-				    </a>
-				</li>
+						<%= image_tag 'servmanity_photo.PNG', class:'rig-img'%>
+				        
+				        <span class="rig-overlay"></span>
+				        
+				        <span class="rig-text">Servmanity</span>
 
-				<li>
-					<a class="rig-cell show-modal" data-reveal-panel-id="servmanity-page">
+					    </a>
+					</li>
 
-					<%= image_tag 'servmanity_photo.PNG', class:'rig-img'%>
-			        
-			        <span class="rig-overlay"></span>
-			        
-			        <span class="rig-text">Servmanity</span>
+				</ul>
 
-				    </a>
-				</li>
-
-			</ul>
+			</div>
 
 		</div>
 
 	</div>
+
+	<%= render :partial => 'pages/next_page_cta', :locals => {:page_id => "design", :cta_text => "See my Design Experience"} %>
 
 </section>
 

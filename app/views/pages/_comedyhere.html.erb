@@ -6,7 +6,10 @@
 
 			<header>ComedyHere</header>
 
-			<%= link_to "http://ComedyHere.com", "http://comedyhere.com", target: :_blank %>
+			<%= link_to "http://ComedyHere.com", "http://comedyhere.com/Montreal", target: :_blank %>
+			<br>
+			<%= link_to "ComedyHere Show List", "http://www.comedyhere.com/Montr%C3%A9al/comedy/open-mic-at-comedy-works/%201-May-2017/992", target: :_blank %>
+
 
 			<span class="dismiss-modal">X</span>
 
@@ -14,13 +17,15 @@
 
 			<div class="text-content">
 
-				<p>ComedyHere is a geocoded directory for recurring and limited engagement comedy shows.</p>
+				<p>ComedyHere is a geocoded directory for recurring and limited engagement comedy shows. The database is searchable by location and category.</p>
 
 				<p>Key Features:</p>
 
 				<ul>
 					<li>Mobile-responsive Design</li>
-					<li>Semantic HTML5</li>
+					<li>Semantic HTML5 (<%= link_to "Very Detailed", "https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fcomedyindex.herokuapp.com%2FMontr%25C3%25A9al%2Fcomedy%2Fnewbie-tuesday%2F%25202-May-2017%2F888", target: :_blank %>)</li>
+					<li>Geocoding (Google Maps API)</li>
+					<li>Customizable Recurring Scheduling</li>
 
 				</ul>
 

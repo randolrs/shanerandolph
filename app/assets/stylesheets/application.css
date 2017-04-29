@@ -65,3 +65,7 @@ html{
 	min-height: 100%;
 
 }
+
+.hide-on-mobile{
+	display: none;
+}

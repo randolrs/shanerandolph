@@ -7,7 +7,7 @@ body{
 	a:hover{
 		text-decoration: none;
 	}
-	
+
 	.main-container{
 
 		top: 0 !important;
@@ -24,7 +24,7 @@ body{
 
 	.left-block{
 	    position: fixed;
-	    z-index: 999;
+	    z-index: 100;
 	    top: 0;
 	    left: 0;
 	    width: 100%;
@@ -120,8 +120,7 @@ body{
 	    	}
 
 	    	.image-content{
-			    width: 35%;
-			    display: none;
+			    width: 100%;
 			    vertical-align: top;
 
 			    img{
@@ -178,9 +177,9 @@ body{
 
 }
 
-.button.blue-background{
+.button.black-background{
 	color: #fff;
-	background: #2980b9;
+	background: #000;
 }
 
 img.blurred{
@@ -194,6 +193,10 @@ img.blurred{
 
 .fixed-nav{
 	padding: 10px 10px;
+	position: fixed;
+	background: #fff;
+	z-index: 100;
+	width: 100%;
 
 	span{
 		background: #000;
@@ -217,4 +220,27 @@ img.blurred{
 		border: 1px solid #000;
 		box-shadow: none;
 	}
+}
+
+.fixed-nav-offset{
+	height: 60px;
+	width: 100%;	
+}
+
+.fixed-bottom-cta {
+	background: #fff;
+	padding: 10px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right:0px;
+
+	a.button{
+		width: 100%;
+	}	
+}
+
+.fixed-bottom-cta-offset{
+	height: 65px;
+	width: 100%;
 }
