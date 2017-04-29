@@ -1,34 +1,55 @@
 
 <section class="reveal-panel" id="design" style="display: none;">
 
-	<div class="text-content">
+	<header>Design</header>
 
-		<h2>Design</h2>
+	<div class="text-content">
 
 		<p>I create responsive, mobile-first web applications using front-end frameworks, including AngularJS, Bootstrap, Jquery, and plain-old CSS media queries.</p>
 
 		<p>I think it is important to solve design challenges with the knowledge that web design is fundamentally a form of communication -- sending a message <i>accurately</i> between the developer and the end-user. As a result, I measure the effectiveness of my designs first and foremost based on user data (conversion rate, engagement, etc.)</p>
 
-		
-		<p>Some of my recent design work includes:</p>
-
-		<ul>
-			<li><a>Hiro Asian Kitchen</a></li>
-			<li><a>ComedyHere</a></li>
-
-		</ul>
-
 		<p>...development plus design is moot without marketing ...</p>
 
 		<br>
 
-		<a class="button blue-background click-to-reveal" data-reveal-panel-id="marketing">Next <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+		<a class="button blue-background click-to-reveal" data-reveal-panel-id="marketing">See my Marketing Experience <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
 
 	</div>
 
 	<div class="image-content">
 
-		<%= image_tag 'shane_randolph_photo.jpg', class:'home-main-image'%>
+		<div class="centered">
+
+			<ul class="" id="rig">
+
+				<li>
+					<a class="rig-cell" href="<%= root_path %>">
+
+					<%= image_tag 'sublime_text_photo.PNG', class:'rig-img'%>
+			        
+			        <span class="rig-overlay"></span>
+			        
+			        <span class="rig-text">ComedyHere</span>
+
+				    </a>
+				</li>
+
+				<li>
+					<a class="rig-cell" href="<%= root_path %>">
+
+					<%= image_tag 'sublime_text_photo.PNG', class:'rig-img'%>
+			        
+			        <span class="rig-overlay"></span>
+			        
+			        <span class="rig-text">HiroAsianKitchen</span>
+
+				    </a>
+				</li>
+
+			</ul>
+
+		</div>
 
 	</div>
 

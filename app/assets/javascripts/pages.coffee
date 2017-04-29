@@ -13,8 +13,10 @@ ready = ->
 		$(".click-to-reveal").click (e) ->
 			$('.click-to-reveal').removeClass('active')
 			$('.reveal-panel').hide()
-			$(@).addClass('active')
 			targetId = "#" + $(@).data("reveal-panel-id")
 			$('body').find(targetId).fadeIn()
+			$('.click-to-reveal').each (index, element) =>
+				if $(element).data("reveal-panel-id") == $(@).data("reveal-panel-id")
+					$(element).addClass('active')
 
 $(document).on('turbolinks:load', ready)
