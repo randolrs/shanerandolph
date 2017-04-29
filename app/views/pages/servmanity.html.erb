@@ -9,12 +9,11 @@
 
 	<br><br>
 	<nav class="main-menu">
-		<a class="menu-option active click-to-reveal" data-reveal-panel-id="welcome">Welcome</a>
+		<a class="menu-option click-to-reveal" data-reveal-panel-id="welcome">Welcome</a>
 		<a class="menu-option click-to-reveal" data-reveal-panel-id="development">Development</a>
 		<a class="menu-option click-to-reveal" data-reveal-panel-id="design">Design/UI</a>
 		<a class="menu-option click-to-reveal" data-reveal-panel-id="marketing">Marketing</a>
 		<a class="menu-option click-to-reveal" data-reveal-panel-id="contact">Contact</a>
-
 	</nav>
 </div>
 
@@ -24,7 +23,7 @@
 
 <div class="fixed-nav mobile-only">
 
-	<span class="click-to-reveal active" data-reveal-panel-id="welcome">Welcome</span>
+	<span class="click-to-reveal" data-reveal-panel-id="welcome">Welcome</span>
 	<span class="click-to-reveal" data-reveal-panel-id="development">Development</span>
 	<span class="click-to-reveal" data-reveal-panel-id="design">Design</span>
 	<span class="click-to-reveal" data-reveal-panel-id="marketing">Marketing</span>
@@ -34,15 +33,55 @@
 
 <div class="right-block">
 	
-	<%= render 'pages/home_welcome' %>
+	<section>
 
-	<%= render 'pages/home_development' %>
+		<header>Servmanity</header>
 
-	<%= render 'pages/home_design' %>
+		<div class="text-content">
 
-	<%= render 'pages/home_marketing' %>
+			<p>Servmanity is an on-demand home services marketplace. ...</p>
 
-	<%= render 'pages/home_contact' %>
+			<p>Key Features:</p>
+
+			<ul>
+				<li>Payment Processing</li>
+				<li>Geocoding</li>
+				<li>Mobile-responsive Design</li>
+
+			</ul>
+
+		</div>
+
+		<div class="image-content">
+
+			<ul class="" id="rig">
+
+				<li>
+					<a class="rig-cell" href="<%= root_path %>">
+
+					<%= image_tag 'sublime_text_photo.PNG', class:'rig-img'%>
+
+				    </a>
+				</li>
+
+				<li>
+					<a class="rig-cell" href="<%= root_path %>">
+
+					<%= image_tag 'sublime_text_photo.PNG', class:'rig-img'%>
+			        
+			        <span class="rig-overlay"></span>
+			        
+			        <span class="rig-text">Servmanity</span>
+
+				    </a>
+				</li>
+
+			</ul>
+
+
+		</div>
+
+
+	</section>
 
 </div>
-

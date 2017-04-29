@@ -5,11 +5,11 @@
 
 	<div class="text-content">
 
-		<p>I create responsive, mobile-first web applications using front-end frameworks, including AngularJS, Bootstrap, Jquery, and plain-old CSS media queries.</p>
+		<p>I create responsive, mobile-first web applications using front-end frameworks, including <%= link_to "MeteorJS", "https://meteor.com", target: :_blank %>, <%= link_to "AngularJS", "https://angular.io", target: :_blank %>, <%= link_to "Bootstrap", "http://getbootstrap.com", target: :_blank %>, <%= link_to "JQuery", "https://jquery.com", target: :_blank %>, and old-fashioned, handwritten (<i>gasp!</i>) CSS media queries.</p>
 
-		<p>I think it is important to solve design challenges with the knowledge that web design is fundamentally a form of communication -- sending a message <i>accurately</i> between the developer and the end-user. As a result, I measure the effectiveness of my designs first and foremost based on user data (conversion rate, engagement, etc.)</p>
+		<p>Design challenges are communication challenges so everything I design is intended first and foremost to be easily understood by the end-user.  Consequently, I err towards simplicity and explicitness in design and use A/B testing to validate optimal design for user experience.</p>
 
-		<p>...development plus design is moot without marketing ...</p>
+		<p>Check out some of my design projects to the right or press the button below to learn more about my marketing experience.</p>
 
 		<br>
 
@@ -24,9 +24,9 @@
 			<ul class="" id="rig">
 
 				<li>
-					<a class="rig-cell" href="<%= root_path %>">
+					<a class="rig-cell show-modal" data-reveal-panel-id="comedyhere-page">
 
-					<%= image_tag 'sublime_text_photo.PNG', class:'rig-img'%>
+					<%= image_tag 'comedy_here_photo.PNG', class:'rig-img'%>
 			        
 			        <span class="rig-overlay"></span>
 			        
@@ -36,9 +36,9 @@
 				</li>
 
 				<li>
-					<a class="rig-cell" href="<%= root_path %>">
+					<a class="rig-cell show-modal" data-reveal-panel-id="hiro-asian-kitchen-page">
 
-					<%= image_tag 'sublime_text_photo.PNG', class:'rig-img'%>
+					<%= image_tag 'hiro_asian_kitchen_photo.PNG', class:'rig-img'%>
 			        
 			        <span class="rig-overlay"></span>
 			        
@@ -54,3 +54,7 @@
 	</div>
 
 </section>
+
+<%= render 'pages/comedyhere' %>
+
+<%= render 'pages/hiro_asian_kitchen' %>

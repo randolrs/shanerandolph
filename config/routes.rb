@@ -9,6 +9,10 @@ Rails.application.routes.draw do
 
   get 'contact' => 'pages#contact'
 
+  get 'artyam' => 'pages#artyam'
+
+  get 'servmanity' => 'pages#servmanity'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

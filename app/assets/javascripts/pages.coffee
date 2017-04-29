@@ -19,4 +19,11 @@ ready = ->
 				if $(element).data("reveal-panel-id") == $(@).data("reveal-panel-id")
 					$(element).addClass('active')
 
+		$(".show-modal").click (e) ->
+			targetId = "#" + $(@).data("reveal-panel-id")
+			$('body').find(targetId).fadeIn()
+
+		$(".dismiss-modal").click (e) ->
+			$('.modal-container').hide()
+
 $(document).on('turbolinks:load', ready)
