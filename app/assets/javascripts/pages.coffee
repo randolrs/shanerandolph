@@ -15,6 +15,7 @@ ready = ->
 			$('.reveal-panel').hide()
 			targetId = "#" + $(@).data("reveal-panel-id")
 			$('body').find(targetId).fadeIn()
+			window.scrollTo(0, 0)
 			$('.click-to-reveal').each (index, element) =>
 				if $(element).data("reveal-panel-id") == $(@).data("reveal-panel-id")
 					$(element).addClass('active')
