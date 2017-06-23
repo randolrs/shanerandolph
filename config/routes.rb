@@ -13,6 +13,9 @@ Rails.application.routes.draw do
 
   get 'servmanity' => 'pages#servmanity'
 
+
+  get 'new_home' => 'pages#new_home'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
