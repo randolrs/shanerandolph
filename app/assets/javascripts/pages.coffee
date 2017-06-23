@@ -20,6 +20,14 @@ ready = ->
 				if $(element).data("reveal-panel-id") == $(@).data("reveal-panel-id")
 					$(element).addClass('active')
 
+		$(".reveal-slide-down").click (e) ->
+			$('.slide-down-panel').hide()
+			targetId = "#" + $(@).data("slide-down-panel-id")
+			$('.home-nav').removeClass('hidden')
+			$('body').find(targetId).slideDown()
+			window.scrollTo(0, 0)
+
+
 		$(".show-modal").click (e) ->
 			targetId = "#" + $(@).data("reveal-panel-id")
 			$('body').find(targetId).fadeIn()

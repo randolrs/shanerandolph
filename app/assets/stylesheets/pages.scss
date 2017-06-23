@@ -6,14 +6,17 @@ body{
 	
 	.home-background{
 
-		position: fixed;
+		position: absolute;
 		left: 0px;
 		right:0px;
 		top:0px;
-		bottom: 0px;
+		min-height: 100%;
+
+		font-family: 'Oxygen', sans-serif;
 
 		background-image: url("milky-way.jpg");
 		background-image: asset-url("milky-way.jpg");
+		background-size:cover;
 
 		background-repeat: no-repeat;
     	background-attachment: fixed;
@@ -26,7 +29,7 @@ body{
 			right:0px;
 			top:0px;
 			bottom: 0px;
-			background: rgba(0,0,0,0.4);
+			background: rgba(0,0,0,0.1);
 		}
 
 		.home-landing{
@@ -75,10 +78,15 @@ body{
 			    h1{
 
 			    	font-size: 40px;
+
+			    	letter-spacing: 2px;
+			    	font-weight: 300;
 			    }
 
 			    h2{
 			    	font-size: 30px;
+			    	letter-spacing: 1.5px;
+			    	font-weight: 300;
 			    }
 
 			    .action-container{
@@ -93,6 +101,11 @@ body{
 			    		cursor: pointer;
 			    		color: #fff;
 			    		font-size: 20px;
+			    		transition:all 0.5s;
+			    	}
+
+			    	.action-button:hover{
+			    		transform:scale(1.1);
 			    	}
 			    }
 		    }
@@ -342,4 +355,61 @@ img.blurred{
 .fixed-bottom-cta-offset{
 	height: 65px;
 	width: 100%;
+}
+
+
+.nav-main-option{
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	right:0px;
+	background: #fff;
+	min-height: 100%;
+	display: none;
+
+	.main-option-content{
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+
+		header{
+			margin-top: 35px;
+			font-size: 40px;
+			text-align: center;
+		}
+
+		h3{
+			text-align:center;
+		}
+	}
+}
+
+.home-nav{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 50px;
+	text-align: center;
+	display: block;
+
+	z-index: 2000;
+
+	a{
+		display: inline-block;
+		height:50px;
+		padding: 10px;
+		line-height: 30px;
+		font-size: 24px;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	a:hover{
+		color: #fff;
+	}
+}
+
+.home-nav.hidden{
+	display: none;
 }
