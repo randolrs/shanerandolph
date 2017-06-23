@@ -12,7 +12,8 @@ body{
 		top:0px;
 		bottom: 0px;
 
-		background-image: url(earth-at-night.jpg);
+		background-image: url("earth-at-night.jpg");
+		background-image: asset-url("earth-at-night.jpg");
 
 		.home-background-overlay{
 			position: fixed;
@@ -86,6 +87,7 @@ body{
 			    		padding: 20px;
 			    		cursor: pointer;
 			    		color: #fff;
+			    		font-size: 20px;
 			    	}
 			    }
 		    }
