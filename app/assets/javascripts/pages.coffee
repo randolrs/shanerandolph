@@ -27,6 +27,12 @@ ready = ->
 			$('body').find(targetId).slideDown()
 			window.scrollTo(0, 0)
 
+		$(".hide-nav").click (e) ->
+			$('.home-nav').addClass('hidden')
+			window.scrollTo(0, 0)
+
+		$(".hide-parent").click (e) ->
+			$(@).parent().fadeOut()
 
 		$(".show-modal").click (e) ->
 			targetId = "#" + $(@).data("reveal-panel-id")
