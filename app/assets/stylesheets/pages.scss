@@ -12,8 +12,13 @@ body{
 		top:0px;
 		bottom: 0px;
 
-		background-image: url("earth-at-night.jpg");
-		background-image: asset-url("earth-at-night.jpg");
+		background-image: url("milky-way.jpg");
+		background-image: asset-url("milky-way.jpg");
+
+		background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-position: center; 
+
 
 		.home-background-overlay{
 			position: fixed;
