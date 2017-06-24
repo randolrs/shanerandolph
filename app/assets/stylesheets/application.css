@@ -69,3 +69,7 @@ html{
 .hide-on-mobile{
 	display: none;
 }
+
+.centered{
+	text-align: center;
+}
