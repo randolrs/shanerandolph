@@ -36,9 +36,15 @@ ready = ->
 
 		$(".show-modal").click (e) ->
 			targetId = "#" + $(@).data("reveal-panel-id")
+			$('body').addClass('no-scroll')
 			$('body').find(targetId).fadeIn()
+
+		$(".modal-container").click (e) ->
+			$(@).hide()
+			$('body').removeClass('no-scroll')
 
 		$(".dismiss-modal").click (e) ->
 			$('.modal-container').hide()
+			$('body').removeClass('no-scroll')
 
 $(document).on('turbolinks:load', ready)

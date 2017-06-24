@@ -73,3 +73,7 @@ html{
 .centered{
 	text-align: center;
 }
+
+.no-scroll{
+  overflow: hidden;
+}

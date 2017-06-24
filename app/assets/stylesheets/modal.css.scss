@@ -4,15 +4,33 @@
 
 .modal-container{
 	background: rgba(255,255,255,0.99);
-	position: absolute;
-	top:0px;
-	bottom:0px;
-	left: 0px;
-	right:0px;
 	z-index: 9999;
+
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 
 	.modal-content{
 		
+        margin: 25px;
+        padding: 25px;
+
+        header{
+            font-size: 24px;
+            margin-bottom: 15px;
+
+        }
+
+        p{
+            margin-bottom: 15px;
+        }
+
+        ul.features{
+            margin-left: 35px;
+        }
+     
 	}
 }
 
