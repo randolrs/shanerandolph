@@ -488,3 +488,22 @@ img.blurred{
 		margin: 10px 0px;
 	}
 }
+
+.color-circle{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	background: #111;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+
+	transform:scale(1);
+    transition:all 1s;
+
+    font-size: 20px;
+}
+
+.color-circle:hover{
+	transform:scale(1.1);
+}
