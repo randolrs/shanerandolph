@@ -13,4 +13,9 @@ body{
 	a{
 		cursor: pointer;
 	}
+
+	a, a:focus, a:hover{
+
+		text-decoration: none;
+	}
 }

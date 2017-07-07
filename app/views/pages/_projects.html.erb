@@ -11,72 +11,76 @@
 		<br>
 
 
-		<div class="centered">
+		<div class="wrapper">
 
-			<ul class="" id="rig">
+			<div class="masonry">
 
-				<li>
-					<a class="rig-cell show-modal" data-reveal-panel-id="thatHQ-page">
+				<%= link_to "https://www.Servmanity.com", target: :_blank do %>
+					
+					<div class="item">
+						<h5 class="title">Servmanity</h5>
+						<p class="description">On-demand home services marketplace. The application matches customers with service providers in real-time based on location, availability, service category, and price.</p>
+						<h6 class="tech-stack">Tech Stack:</h6>
+						<%= link_to "Ruby", "http://http://rubyonrails.org/", target: :_blank, class:'stack-item' %>
+						<%= link_to "JQuery", "https://jquery.com/", target: :_blank, class:'stack-item' %>
+						<%= link_to "PostgreSQL", "https://www.postgresql.org/", target: :_blank, class:'stack-item' %>
+						<%= link_to "Stripe API", "https://stripe.com/docs/api", target: :_blank, class:'stack-item' %>
+					</div>
 
-					<%= image_tag 'that_hq_photo.png', class:'rig-img'%>
-			        
-			        <span class="rig-overlay"></span>
-			        
-			        <span class="rig-text">thatHQ</span>
+				<%end%>
 
-				    </a>
-				</li>
+				<%= link_to root_path, target: :_blank do %>
 
-				<li>
-					<a class="rig-cell show-modal" data-reveal-panel-id="comedyhere-page">
+					<div class="item">
+						<h5 class="title">thatHQ</h5>
+						<p class="description">Personalized syllabus of business book recommendations based on my favorite 60 business books.</p>
+						<h6 class="tech-stack">Tech Stack:</h6>
+						<%= link_to "Ruby", "http://http://rubyonrails.org/", target: :_blank, class:'stack-item' %>
+						<%= link_to "JQuery", "https://jquery.com/", target: :_blank, class:'stack-item' %>
+					</div>
 
-					<%= image_tag 'comedy_here_photo.PNG', class:'rig-img'%>
-			        
-			        <span class="rig-overlay"></span>
-			        
-			        <span class="rig-text">ComedyHere</span>
+				<%end%>
 
-				    </a>
-				</li>
+				<%= link_to root_path, target: :_blank do %>
 
-				<li>
-					<a class="rig-cell show-modal" data-reveal-panel-id="servmanity-page">
+					<div class="item">
+						<h5 class="title">ArtYam</h5>
+						<p class="description">Subscription software-as-a-service eCommerce platform for fine arts galleries and artists. The application features content-rich, responsive, eCommerce-enabled web pages that can be accessed by via short, human-readable URLs.</p>
+						<h6 class="tech-stack">Tech Stack:</h6>
+						<%= link_to "Ruby", "http://http://rubyonrails.org/", target: :_blank, class:'stack-item' %>
+						<%= link_to "JQuery", "https://jquery.com/", target: :_blank, class:'stack-item' %>
+						<%= link_to "Stripe API", "https://stripe.com/docs/api", target: :_blank, class:'stack-item' %>
+					</div>
 
-					<%= image_tag 'servmanity_photo.PNG', class:'rig-img'%>
-			        
-			        <span class="rig-overlay"></span>
-			        
-			        <span class="rig-text">Servmanity</span>
+				<%end%>
 
-				    </a>
-				</li>
+				<%= link_to root_path, target: :_blank do %>
 
+					<div class="item">
+						<h5 class="title">ComedyHere</h5>
+						<p class="description">Geocoded directory for recurring and limited engagement local comedy shows.</p>
+						<h6 class="tech-stack">Tech Stack:</h6>
+						<%= link_to "Ruby", "http://http://rubyonrails.org/", target: :_blank, class:'stack-item' %>
+						<%= link_to "JQuery", "https://jquery.com/", target: :_blank, class:'stack-item' %>
+						<%= link_to "Google Maps API", "https://developers.google.com/maps/", target: :_blank, class:'stack-item' %>
+					</div>
 
-				<li>
-					<a class="rig-cell show-modal" data-reveal-panel-id="artyam-page">
+				<%end%>
 
-					<%= image_tag 'artyam_photo.PNG', class:'rig-img'%>
-			        
-			        <span class="rig-overlay"></span>
-			        
-			        <span class="rig-text">ArtYam</span>
+				<%= link_to root_path, target: :_blank do %>
 
-				    </a>
-				</li>
+					<div class="item">
+						<h5 class="title">Scoreboard Interface</h5>
+						<p class="description">An mockup of a generic game scoreboard.</p>
+						<h6 class="tech-stack">Tech Stack:</h6>
+						<%= link_to "NodeJS", "https://nodejs.org", target: :_blank, class:'stack-item' %>
+						<%= link_to "React", "https://facebook.github.io/react/", target: :_blank, class:'stack-item' %>
+						<%= link_to "Redux", "http://redux.js.org", target: :_blank, class:'stack-item' %>
+					</div>
 
-				<li>
-					<a class="rig-cell show-modal" href="https://github.com/randolrs/react_scoreboard">
-			        
-			        <%= image_tag 'scoreboard_photo.png', class:'rig-img'%>
+				<%end%>
 
-			        <span class="rig-overlay"></span>
-			        
-			        <span class="rig-text">ReactJS Scoreboard</span>
-
-				    </a>
-				</li>
-
-			</ul>
+			</div>
 
 		</div>
 
