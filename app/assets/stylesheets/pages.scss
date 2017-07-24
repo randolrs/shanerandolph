@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-	
+
 	.home-background{
 
 		position: absolute;
@@ -20,7 +20,7 @@ body{
 
 		background-repeat: no-repeat;
     	background-attachment: fixed;
-    	background-position: center; 
+    	background-position: center;
 
 
 		.home-background-overlay{
@@ -92,7 +92,7 @@ body{
 			    .action-container{
 
 			    	display: inline-block;
-			    	
+
 
 			    	.action-button{
 			    		display: inline-block;
@@ -157,10 +157,10 @@ body{
 
 	    	padding:5px 10px;
 	    	width: inherit;
-			max-width: 80px;
-			height: inherit;
-			margin: 0;
-			display: inline-block;
+				max-width: 80px;
+				height: inherit;
+				margin: 0;
+				display: inline-block;
 
 		    .home-main-image{
 		    	width: 70px;
@@ -179,7 +179,7 @@ body{
 	    }
 
 	    .main-menu{
-	    	
+
 	    	display: none;
 
 	    	a{
@@ -271,14 +271,14 @@ body{
 .button{
 	padding: 10px 50px;
     border-radius: 2px;
-    
+
     display: inline-block;
     margin: 0px;
     text-align: center;
     z-index: 99;
     position: relative;
     cursor: pointer;
-    
+
     border: 1px solid rgba(0,0,0,0.2);
 
     text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
@@ -338,7 +338,7 @@ img.blurred{
 
 .fixed-nav-offset{
 	height: 100px;
-	width: 100%;	
+	width: 100%;
 }
 
 .fixed-bottom-cta {
@@ -351,7 +351,7 @@ img.blurred{
 
 	a.button{
 		width: 100%;
-	}	
+	}
 }
 
 .fixed-bottom-cta-offset{
@@ -449,7 +449,7 @@ img.blurred{
 }
 
 .project-box{
-	
+
 	text-align: center;
     display: inline-block;
     width: 200px;
@@ -461,7 +461,7 @@ img.blurred{
 }
 
 .project-box:hover{
-	
+
 	border: 1px solid #fcc;
 }
 
@@ -469,7 +469,7 @@ img.blurred{
 .stack-container{
 	padding: 20px;
 	border-top: 2px solid #333;
-	border-bottom: 2px solid #333;	
+	border-bottom: 2px solid #333;
 	margin-bottom: 30px;
 
 	text-align: center;
